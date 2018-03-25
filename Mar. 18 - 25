@@ -1,0 +1,664 @@
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> books = {'Mort', 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future', 'Good Omens'}
+>>> print (books)
+set(['Good Omens', 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future', 'Mort'])
+>>> books = ['Mort', 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future', 'Good Omens']
+>>> print (books)
+['Mort', 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future', 'Good Omens']
+>>> # IF-THEN-ELSE STATEMENTS
+>>> age = 25
+>>> if age == 25:
+	print ('A pig fell in the mud!')
+
+	
+A pig fell in the mud!
+>>> if age == 25:
+	print ('A pig fell in the mud!')
+else:
+	print ('Shh. It\'s a secret!')
+
+	
+A pig fell in the mud!
+>>> #IF AND ELIF STATEMENTS
+>>> age = 12
+>>> if age == 10:
+	print ("What do you call an unhappy cranberry?")
+	print ("A blueberry!")
+elif age == 11:
+	print ("What did the green grape say to the blue grape?"
+	print ("Breathe! Breathe!")
+	       
+SyntaxError: invalid syntax
+>>> elif age == 12:
+	
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> if age == 10 or age == 11 or age == 12 or age == 13:
+	print ('What is 13 + 49 + 84 + 155 + 97?')
+else:
+	print ('Huh?')
+
+	
+
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    if age == 10 or age == 11 or age == 12 or age == 13:
+NameError: name 'age' is not defined
+>>> #VARIABLES WITH NO VALUE-NONE
+>>> myval = None
+>>> print (myval)
+None
+>>> 
+>>> if myval == None:
+	print("The variable myval doesn't have a value")
+
+	
+The variable myval doesn't have a value
+>>> 
+>>> #THE DIFFERENCE BETWEEN STRINGS AND NUMBERS
+>>> age == 10
+
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    age == 10
+NameError: name 'age' is not defined
+>>> if age == 10:
+	print ("What's the best way to speak to a monster?")
+	print ("From as far away as possible!")
+
+	
+
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    if age == 10:
+NameError: name 'age' is not defined
+>>> age = 10
+>>> if age == 10:
+	print ("What's the best way to speak to a monster?")
+	print ("From as far away as possible!")
+
+	
+What's the best way to speak to a monster?
+From as far away as possible!
+>>> #This code won't work:
+>>> #age = '10'
+>>> #if age == 10:
+>>> #print ("What's the best way to speak to a monster?")
+>>> #print ("From as far away as possible!")
+>>> #However, this will work:
+>>> age = '10'
+>>> converted_age = int(age)
+>>> #This ('int') converts a string into a number.
+>>> #To convert a number into a string:
+>>> age == 10
+False
+>>> age == 10
+False
+>>> 
+>>> 
+>>> 
+>>> age == 10
+False
+>>> #STOP IT PYTHON
+>>> print (age)
+10
+>>> age == 10
+False
+>>> #GAH
+>>> 
+>>> converted_age = str(age)
+>>> #Yeah. So that's how
+>>> #The float function can handle numbers that aren't integers.
+>>> age = '10.5'
+>>> converted_age = float(age)
+>>> print(converted_age)
+10.5
+>>> #You will also get an error if you try to convert a string that doesn't contain a number in digits.
+
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> #PROGRAMMING PUZZLES
+>>> twinkies = 20
+>>> if twinkies > 500 or < 100
+SyntaxError: invalid syntax
+>>> if twinkies > 500 or < 100:
+	
+SyntaxError: invalid syntax
+>>> twinkies = 200
+>>> if twinkies > 500 or twinkies < 100:
+	print ("Too few or too many!")
+
+	
+>>> money = 150
+>>> if money > 100 and money <500:
+	print ("Yay!")
+elif money > 5000 and money < 1000:
+	print ("Woo!")
+
+	
+Yay!
+>>> ninjas = 5
+>>> if ninjas > 50 and ninjas < 30:
+	print ("That's too many!")
+elif ninjas > 30 and ninjas < 10:
+	print ("It'll be a struggle, but I can take 'em!")
+elif ninjas > 10:
+	print ("I can fight those ninjas!")
+
+	
+>>> elif ninjas < 10:
+	
+SyntaxError: invalid syntax
+>>> >>> ninjas = 5
+>>> if ninjas < 50 and ninjas > 30:
+	print ("That's too many!")
+elif ninjas < 30 and ninjas > 10:
+	print ("It'll be a struggle, but I can take 'em!")
+elif ninjas < 10:
+	print ("I can fight those ninjas!")
+	
+SyntaxError: invalid syntax
+>>> ninjas = 5
+>>> if ninjas < 50 and ninjas > 30:
+	print ("That's too many!")
+elif ninjas < 30 and ninjas > 10:
+	print ("It'll be a struggle, but I can take 'em!")
+elif ninjas < 10:
+	print ("I can fight those ninjas!")
+	
+>>> 
+>>> ninjas = 5
+>>> if ninjas < 50 and ninjas > 30:
+	print ("That's too many!")
+elif ninjas < 30 and ninjas > 10:
+	print ("It'll be a struggle, but I can take 'em!")
+elif ninjas < 10:
+	print ("I can fight those ninjas!")
+	
+>>> 
+>>> ninjas = 5
+>>> if ninjas < 50 and ninjas > 30:
+	print ("That's too many!")
+elif ninjas < 30 and ninjas > 10:
+	print ("It'll be a struggle, but I can take 'em!")
+elif ninjas < 10:
+	print ("I can fight those ninjas!")
+
+	
+I can fight those ninjas!
+>>> 
+>>> #FOR LOOPS
+>>> for x in range (0, 5):
+	print ('hello')
+
+	
+hello
+hello
+hello
+hello
+hello
+>>> # Printing a list of numbers:
+>>> print(list(range(10, 20)))
+[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>> # Counting hellos:
+>>> for x in range(0, 5):
+	print('hello %s' % x)
+
+	
+hello 0
+hello 1
+hello 2
+hello 3
+hello 4
+>>> wizard_list ['spider legs', 'toe of frog', 'snail tongue', 'bat wing', 'slug butter', 'bear burp']
+
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    wizard_list ['spider legs', 'toe of frog', 'snail tongue', 'bat wing', 'slug butter', 'bear burp']
+NameError: name 'wizard_list' is not defined
+>>> wizard_list  = ['spider legs', 'toe of frog', 'snail tongue', 'bat wing', 'slug butter', 'bear burp']
+>>> for i in wizard_list:
+	print(i)
+
+	
+spider legs
+toe of frog
+snail tongue
+bat wing
+slug butter
+bear burp
+>>> # This code is saying, "For each item in wizard_list, store the value in the variable i, and then print the contents of that variable."
+>>> 
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> #LOOPS
+>>> hugehairypants = ['huge', 'hairy', 'pants']
+>>> for i in hugehairypants:
+	print(i)
+	print(i)
+
+	
+huge
+huge
+hairy
+hairy
+pants
+pants
+>>> hugehairypants = ['huge', 'hairy', 'pants']
+>>> for i in hugehairypants:
+	print(i)
+	for j in hugehairypants:
+		print(j)
+
+		
+huge
+huge
+hairy
+pants
+hairy
+huge
+hairy
+pants
+pants
+huge
+hairy
+pants
+>>> #Python enters the first loop and prints an item from the list at print(i). Next, it enters the second loop and prints all the items in the list at print(j). In the output, the first lines (huge, hairy, and pants every four items) are printed by print(i) statement. The other lines are prited by print(j).
+>>> #So, back to the problem with the stolen, found, and magic coins.
+>>> found_coins = 20
+>>> magic_coins = 70
+>>> stolen_coins = 3
+>>> coins = found_coins
+>>> for week in range(1, 53):
+	coins = coins + magic_coins - stolen_coins
+	print('Week %s = %s' %(week, coins))
+
+	
+Week 1 = 87
+Week 2 = 154
+Week 3 = 221
+Week 4 = 288
+Week 5 = 355
+Week 6 = 422
+Week 7 = 489
+Week 8 = 556
+Week 9 = 623
+Week 10 = 690
+Week 11 = 757
+Week 12 = 824
+Week 13 = 891
+Week 14 = 958
+Week 15 = 1025
+Week 16 = 1092
+Week 17 = 1159
+Week 18 = 1226
+Week 19 = 1293
+Week 20 = 1360
+Week 21 = 1427
+Week 22 = 1494
+Week 23 = 1561
+Week 24 = 1628
+Week 25 = 1695
+Week 26 = 1762
+Week 27 = 1829
+Week 28 = 1896
+Week 29 = 1963
+Week 30 = 2030
+Week 31 = 2097
+Week 32 = 2164
+Week 33 = 2231
+Week 34 = 2298
+Week 35 = 2365
+Week 36 = 2432
+Week 37 = 2499
+Week 38 = 2566
+Week 39 = 2633
+Week 40 = 2700
+Week 41 = 2767
+Week 42 = 2834
+Week 43 = 2901
+Week 44 = 2968
+Week 45 = 3035
+Week 46 = 3102
+Week 47 = 3169
+Week 48 = 3236
+Week 49 = 3303
+Week 50 = 3370
+Week 51 = 3437
+Week 52 = 3504
+>>> #WHILE LOOPS
+>>> # The steps of a while loop are as follows:
+>>> # 1. Check the condition.
+>>> # 2. Execute the code in the block.
+>>> # 3. Repeat.
+>>> #Let's try one:
+>>> x = 45
+>>> y = 80
+>>> while x < 50 and y < 100:
+	x = x + 1
+	y = y + 1
+	print(x, y)
+
+	
+(46, 81)
+(47, 82)
+(48, 83)
+(49, 84)
+(50, 85)
+>>> for x in range(0, 20):
+	print ('hello %s' % x)
+	if x < 9:
+		break
+
+	
+hello 0
+>>> x = 0
+>>> while x < 13:
+	x = x + 2
+	print(x, y)
+
+	
+(2, 85)
+(4, 85)
+(6, 85)
+(8, 85)
+(10, 85)
+(12, 85)
+(14, 85)
+>>> 
+>>> x = 0
+>>> while x < 14:
+	x = x + 2
+	print (x, y)
+
+	
+
+Traceback (most recent call last):
+  File "<pyshell#50>", line 3, in <module>
+    print (x, y)
+NameError: name 'y' is not defined
+>>> x = 0
+>>> while x < 13:
+	x = x + 2
+	print(x)
+
+	
+2
+4
+6
+8
+10
+12
+14
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> #FUNCTIONS
+>>> def testfunc(myname):
+	print ('hello %s' % myname)
+
+	
+>>> testfunc(Mary)
+
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    testfunc(Mary)
+NameError: name 'Mary' is not defined
+>>> testfunc(myname)
+
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    testfunc(myname)
+NameError: name 'myname' is not defined
+>>> testfunc('Mary')
+hello Mary
+>>> def testfunc(fname, lname):
+	print ('Hello %s %s' % fname, lname)
+
+	
+>>> testfunc('Mary', 'Smith')
+
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    testfunc('Mary', 'Smith')
+  File "<pyshell#10>", line 2, in testfunc
+    print ('Hello %s %s' % fname, lname)
+TypeError: not enough arguments for format string
+>>> testfunc('Mary', 'Smith')
+
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    testfunc('Mary', 'Smith')
+  File "<pyshell#10>", line 2, in testfunc
+    print ('Hello %s %s' % fname, lname)
+TypeError: not enough arguments for format string
+>>> def testfunc(fname, lname):
+	print ('Hello %s %s' % fname, lname)
+
+	
+>>> testfunc('Mary', 'Smith')
+
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    testfunc('Mary', 'Smith')
+  File "<pyshell#15>", line 2, in testfunc
+    print ('Hello %s %s' % fname, lname)
+TypeError: not enough arguments for format string
+>>> testfunc('Bob', 'Bailey)
+	 
+SyntaxError: EOL while scanning string literal
+>>> testfunc('Bob', 'Bailey')
+
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    testfunc('Bob', 'Bailey')
+  File "<pyshell#15>", line 2, in testfunc
+    print ('Hello %s %s' % fname, lname)
+TypeError: not enough arguments for format string
+>>> 
+=============================== RESTART: Shell ===============================
+>>> def testfunc(fname, lname):
+	print ('Hello %s %s' % fname, lname)
+
+	
+>>> testfunc('Mary', 'Smith')
+
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    testfunc('Mary', 'Smith')
+  File "<pyshell#21>", line 2, in testfunc
+    print ('Hello %s %s' % fname, lname)
+TypeError: not enough arguments for format string
+>>> def testfunc(fname, lname):
+	print ('Hello %s %s' % (fname, lname))
+
+	
+>>> testfunc('Mary', 'Smith')
+Hello Mary Smith
+>>> firstname = 'Joe'
+>>> lastname = 'Robertson'
+>>> testfunc(firstname, lastname)
+Hello Joe Robertson
+>>> #A function is often used to return a value, using a return statement.
+>>> def savings(pocket_money, paper_route, spending):
+	return pocket_money + paper_route - spending
+
+>>> print(savings(10, 10, 5))
+15
+>>> 
+Python 2.7.13 |Anaconda 4.0.0 (64-bit)| (default, May 11 2017, 13:17:26) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> #VARIABLES AND SCOPE
+>>> def variable_test():
+	first_variable = 10
+	second_variable = 20
+	return first_variable * second variable
+SyntaxError: invalid syntax
+>>> def variable_test():
+	first_variable = 10
+	second_variable = 20
+	return first_variable * second_variable
+
+>>> print(variable_test())
+200
+>>> def spaceship_building(cans):
+	total_cans = 0
+	# Okay, so halfway through all of this I realised I did not know what a parameter was. A parameter is a variable that exists only while a function is being used.
+	for week in range(1, 53):
+		total_cans = total_cans + cans
+		print('Week %s = %s cans' % (week, total_cans))
+
+		
+>>> spaceship_building(2)
+Week 1 = 2 cans
+Week 2 = 4 cans
+Week 3 = 6 cans
+Week 4 = 8 cans
+Week 5 = 10 cans
+Week 6 = 12 cans
+Week 7 = 14 cans
+Week 8 = 16 cans
+Week 9 = 18 cans
+Week 10 = 20 cans
+Week 11 = 22 cans
+Week 12 = 24 cans
+Week 13 = 26 cans
+Week 14 = 28 cans
+Week 15 = 30 cans
+Week 16 = 32 cans
+Week 17 = 34 cans
+Week 18 = 36 cans
+Week 19 = 38 cans
+Week 20 = 40 cans
+Week 21 = 42 cans
+Week 22 = 44 cans
+Week 23 = 46 cans
+Week 24 = 48 cans
+Week 25 = 50 cans
+Week 26 = 52 cans
+Week 27 = 54 cans
+Week 28 = 56 cans
+Week 29 = 58 cans
+Week 30 = 60 cans
+Week 31 = 62 cans
+Week 32 = 64 cans
+Week 33 = 66 cans
+Week 34 = 68 cans
+Week 35 = 70 cans
+Week 36 = 72 cans
+Week 37 = 74 cans
+Week 38 = 76 cans
+Week 39 = 78 cans
+Week 40 = 80 cans
+Week 41 = 82 cans
+Week 42 = 84 cans
+Week 43 = 86 cans
+Week 44 = 88 cans
+Week 45 = 90 cans
+Week 46 = 92 cans
+Week 47 = 94 cans
+Week 48 = 96 cans
+Week 49 = 98 cans
+Week 50 = 100 cans
+Week 51 = 102 cans
+Week 52 = 104 cans
+>>> spaceship_building(13)
+Week 1 = 13 cans
+Week 2 = 26 cans
+Week 3 = 39 cans
+Week 4 = 52 cans
+Week 5 = 65 cans
+Week 6 = 78 cans
+Week 7 = 91 cans
+Week 8 = 104 cans
+Week 9 = 117 cans
+Week 10 = 130 cans
+Week 11 = 143 cans
+Week 12 = 156 cans
+Week 13 = 169 cans
+Week 14 = 182 cans
+Week 15 = 195 cans
+Week 16 = 208 cans
+Week 17 = 221 cans
+Week 18 = 234 cans
+Week 19 = 247 cans
+Week 20 = 260 cans
+Week 21 = 273 cans
+Week 22 = 286 cans
+Week 23 = 299 cans
+Week 24 = 312 cans
+Week 25 = 325 cans
+Week 26 = 338 cans
+Week 27 = 351 cans
+Week 28 = 364 cans
+Week 29 = 377 cans
+Week 30 = 390 cans
+Week 31 = 403 cans
+Week 32 = 416 cans
+Week 33 = 429 cans
+Week 34 = 442 cans
+Week 35 = 455 cans
+Week 36 = 468 cans
+Week 37 = 481 cans
+Week 38 = 494 cans
+Week 39 = 507 cans
+Week 40 = 520 cans
+Week 41 = 533 cans
+Week 42 = 546 cans
+Week 43 = 559 cans
+Week 44 = 572 cans
+Week 45 = 585 cans
+Week 46 = 598 cans
+Week 47 = 611 cans
+Week 48 = 624 cans
+Week 49 = 637 cans
+Week 50 = 650 cans
+Week 51 = 663 cans
+Week 52 = 676 cans
+>>> #Cool!
+>>> #USING MODULES
+>>> import time
+>>> print(time.asctime())
+Sat Mar 24 16:48:42 2018
+>>> import sys
+>>> print(sys.stdin.readline())
+
+
+
+>>> def silly_age_joke(age):
+	if age >= 10 and age <= 13:
+		print('What is 13 + 49 + 84 + 155 + 97? A headache!')
+	else:
+		print ('Huh?')
+
+		
+>>> silly_age_joke(9)
+Huh?
+>>> silly_age_joke(10)
+What is 13 + 49 + 84 + 155 + 97? A headache!
+>>> def silly_age_joke():
+	print('How old are you?')
+	age = int(sys.stdin.readline())
+	if age >= 10 and age <= 13:
+		print('What is 13 + 49 + 84 + 155 + 97? A headache!')
+	else:
+		print('Huh?')
+
+		
+>>> silly_age_joke()
+How old are you?
+10
+What is 13 + 49 + 84 + 155 + 97? A headache!
+>>> silly_age_joke()
+How old are you?
+15
+Huh?
+>>> 
+
+
