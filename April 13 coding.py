@@ -53,4 +53,24 @@ the fruit at index 3 is dragon fruit
 >>> strings = 's,t,r,i,n,g,S,T,R,I,N,G'
 >>> print(max(strings))
 t
->>> 
+>>> #also you can call it up directly
+>>> print(max(10, 300, 450, 50, 90))
+450
+>>> #aaaand min works the same, but gives the smallest value :)
+>>> print(min(78, 2, 1, 900))
+1
+>>> #Ta-da!
+>>> #Suppose you were playing a guessing game with a team of four
+#players, and each had to guess a number that was less than your
+#number. If any player guesses above your number, all players lose,
+#but if they all guess lower, they win. We could use max to quickly
+#find whether all of the guesses are lower, like so:
+>>> guess_this_number = 61
+>>> player_guesses = [12, 15, 70, 45]
+>>> if max(player_guesses) > guess_this_number:
+	print('Boom! You all lose')
+else:
+	print('You win')
+
+	
+Boom! You all lose
