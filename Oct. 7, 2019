@@ -1,0 +1,181 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> # Oct. 6, 2019
+>>> # I am bored out of my goshdanged mind, which is pretty much the only reason why I am programming.
+>>> # AAAAAAAAAAAAAAAAAAAAAAAa
+>>> x = 10
+>>> print(x)
+10
+>>> print('x = ' + str(x))
+x = 10
+>>> print('x = ' + int(x))
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    print('x = ' + int(x))
+TypeError: can only concatenate str (not "int") to str
+>>> # Dang.
+>>> # So you can... er... concatenate just like in Java.
+>>> 
+>>> # Wow. It feels weird to be able to do things in other languages that I can't do in Python.
+>>> # I must be out of practise.
+>>> 
+>>> # So. Let's try another version of the last statement.
+>>> 
+>>> print ('x = ', x)
+x =  10
+>>> # This is a tuple.
+>>> # It is different from concatenatenatenatenatinggng. Whatever it is.
+>>> # Here is another tuple.
+>>> x, y, z = 100, -45, 0
+>>> print("x = ", x, " y = ", y, " z = ", z)
+x =  100  y =  -45  z =  0
+>>> 
+>>> # x, y, z = 100, -45, 0 is a tuple.
+>>> 
+>>> # A tuple is a TYPE, like int or float.
+>>> 
+>>> #PLAYING WITH TYYYYPPE
+>>> 
+>>> #E
+>>> #E...
+>>> #E?
+>>> 
+>>> a = 10
+>>> print("First, variable a has value", a, "and type", type(a))
+First, variable a has value 10 and type <class 'int'>
+>>> a = "ABC"
+>>> print("Now it's", type(a))
+Now it's <class 'str'>
+>>> 
+>>> 
+>>> # Now, let's learn something I'm probably never going to use!
+>>> 
+>>> #UNDEFINING VAruablessss
+>>> 
+>>> x = 2
+>>> del x
+>>> x
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    x
+NameError: name 'x' is not defined
+>>> # Yaaay.
+>>> 
+>>> # AAAAAAAAAAAAAAAAA I just found out you can change the meaning of keywords.
+>>> 
+>>> #AAAAAAAAAAAAAAAAa
+>>> # Let's redefine print.
+>>> print = 44
+>>> print
+44
+>>> #Woh.
+>>> print("Hi")
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    print("Hi")
+TypeError: 'int' object is not callable
+>>> # AAAAA
+>>> 
+>>> # Okay. Now it's time for that handy dandy 'del' we learned. And to think I'd never need to use it.
+>>> 
+>>> del print
+>>> print("Yo")
+Yo
+>>> #Yeet.
+>>> #Hey. I've got an idea.
+>>> print = kick
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    print = kick
+NameError: name 'kick' is not defined
+>>> #Whoops.
+>>> kick = print
+>>> kick(" me in the butt")
+ me in the butt
+>>> #Heh.
+>>> del kick
+>>> 
+>>> #Let's talk about number types again. Because I've forgotten all of it.
+>>> 
+>>> #NUMBER TYPPPEEEEEEESSSSSSS......
+>>> #...S...
+>>> #S..
+>>> #SSSSSSSSS
+>>> 
+>>> #Float numbers suck because they have limitations. Look at this nonsense.
+>>> x = 27.34789379387849378194073892074839207148930217489302
+>>> x
+27.347893793878495
+>>> # :(
+>>> # >:(
+>>> # >>>>:(((((((((((
+>>> 
+>>> #In Python, there is something different in place of scientific notation.
+>>> #They use 'e' instead of '10'.
+>>> #Ex.
+>>> #3.4 * 10 ** 2
+>>> #becomes
+>>> #3.4e2
+>>> #Which is very weird but also very cool.
+>>> 
+>>> print(2.9998e23)
+2.9998e+23
+>>> #I thought that would be more exciting.
+>>> 
+>>> #Let's looking at rounding and int and stuff.
+>>> 
+>>> #ROUNDING AND INT AND STUFF
+>>> 
+>>> 28.71
+28.71
+>>> int(28.71)
+28
+>>> round(28.71)
+29
+>>> round(18.47)
+18
+>>> int(18.47)
+18
+>>> #So int always round down and round just rounds. I think.
+>>> 
+>>> x = 93.23761
+>>> round(x)
+93
+>>> round(x, 2)
+93.24
+>>> round(x, 0)
+93.0
+>>> round(x, 10)
+93.23761
+>>> round(x, 0.1)
+Traceback (most recent call last):
+  File "<pyshell#113>", line 1, in <module>
+    round(x, 0.1)
+TypeError: 'float' object cannot be interpreted as an integer
+>>> #Heh.
+>>> type(round(x))
+<class 'int'>
+>>> type(round(x, 1))
+<class 'float'>
+>>> #OOOOOooooooooooooooOOOOOOOOOOOo.
+>>> #But what about:
+>>> type(round(x, 0))
+<class 'float'>
+>>> #AAAAAaaaaaaaaahHHHHHHHHHHHHHHhhhhh.
+>>> #But but but but
+>>> #YOu can also round it with negative integers!!!!!
+>>> 
+>>> round (x, -1)
+90.0
+>>> round(x, -100)
+0.0
+>>> round(x, -2)
+100.0
+>>> round (x, -5)
+0.0
+>>> round(x, -3)
+0.0
+>>> #This will round the floating-point expression to the 10 ** -r digit.
+>>> #This sounds fancy but it ain't too bad.
+>>> #For example, round (n, -2) will round to the hundreds place, which is 10**2. round(n, 3) rounds to the thousands, and so on.
+>>> #I need to sleep now. 
